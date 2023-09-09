@@ -1,1 +1,5 @@
-RCHIVO DE PROPIEDADES CERTIFICACION
+server:
+  port: 9000
+
+encrypt:
+  key: mitocode-secrets

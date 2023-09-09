@@ -1,3 +1,9 @@
-MI PRIMER ARCHIVO DE PROPIEDADES
+server:
+  port: 9000
+
+encrypt:
+  key: mitocode-secrets
+  value: {cipher}3324116c4dd991fdd200f4cc4329d6e998bc90b6799cff62973f36555e13210f
+
 
 

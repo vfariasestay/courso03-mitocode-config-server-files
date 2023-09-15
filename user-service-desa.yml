@@ -1,14 +1,11 @@
-erver:
-    port: ${CUSTOM.SERVER.PORT:9004}
+server:
+  port: ${CUSTOM.SERVER.PORT:9004}
 
-    spring:
-        application:
-              name: user-service
-                  cloud:
-                        config:
-                                uri: http://localhost:9000
-                                        profile: desa, cert
-                                                enabled: true
-
-                                                encrypt:
-                                                    key: mitocode
+spring:
+  application:
+    name: user-service
+  cloud:
+    config:
+      uri: http://localhost:9000
+      profile: desa
+      enabled: true

@@ -13,10 +13,7 @@ eureka:
 spring:
   data:
     mongodb:
-      #host: localhost
-      #port: 27017
-      database: mitocodedb
-      uri: mongodb://mitocode:mitocode@localhost:27017
+      uri: mongodb://mitocode:mitocode@localhost:27017/mitocodedb?authSource=admin
 
 
 

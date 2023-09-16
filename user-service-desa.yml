@@ -1,11 +1,29 @@
 server:
   port: ${CUSTOM.SERVER.PORT:9004}
 
+
+eureka:
+  client:
+   fetchRegistry: true
+   registerWithEureka: true
+   serviceUrl:
+    defaultZone: http://localhost:8761/eureka 
+
+
 spring:
-  application:
-    name: user-service
-  cloud:
-    config:
-      uri: http://localhost:9000
-      profile: desa
-      enabled: true
+  data:
+    mongodb:
+      #host: localhost
+      #port: 27017
+      database: mitocodedb
+      uri: mongodb://mitocode:mitocode@localhost:27017
+
+
+
+  #application:
+  #  name: user-service
+  #cloud:
+  #  config:
+  #    uri: http://localhost:9000
+  #    profile: desa
+  #    enabled: true
